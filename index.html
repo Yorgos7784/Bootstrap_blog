@@ -4,226 +4,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter_5</title>
-    <style>
-        /* 초기화 코드 */
-        *{margin: 0; padding: 0;}
-        body{font-family: sans-serif;}
-        li{list-style: none;}
-        a{text-decoration: none;}
-        img{border: 0;}
-       
-        /* Header 설정 */
-        #main_header{width:960px; margin: 0 auto; height: 160px; position: relative;}
-        #main_header>#title{position: absolute; left: 20px; top: 30px; font-family: 'Coiny', cursive;}
-        #main_header>#main_gnb{position: absolute; right: 0px; top: 0px;}
-        #main_header>#main_lnb{position: absolute; right: 0px; bottom: 10px;}
-        
-        /* Navigation 설정 */
-        #main_gnb>ul{overflow: hidden;}
-        #main_gnb>ul>li{float: left;}
-        #main_gnb>ul>li>a{display: block; padding: 2px 10px; border: 1px solid black;}
-        #main_gnb>ul>li>a:hover{background: black; color: white;}
-        #main_gnb>ul>li:first-child>a{border-radius: 10px 0 0 10px;}
-        #main_gnb>ul>li:last-child>a{border-radius: 0 10px 10px 0;}
-
-        #main_lnb>ul{overflow: hidden;}
-        #main_lnb>ul>li{float: left;}
-        #main_lnb>ul>li>a{display: block; padding: 10px 20px; border: 1px solid black;}
-        #main_lnb>ul>li>a:hover{background: black; color: white;}
-        #main_lnb>ul>li:first-child>a{border-radius: 10px 0 0 10px;}
-        #main_lnb>ul>li:last-child>a{border-radius: 0 10px 10px 0;}
-
-        /* Content 설정 */
-        #content{width: 960px; margin: 0 auto; overflow: hidden;}
-        #content>#main_section{width: 750px; float: left;}
-        #content>#main_aside{width: 200px; float: right;}
-
-        /* Main Section 설정 */
-        #main_section>article.main_article{margin-bottom: 10px; padding: 20px; border: 1px solid black;}
-
-        /* Aside 설정 */
-        input:nth-of-type(1){display: none;}
-        input:nth-of-type(1)~div:nth-of-type(1){display: none;}
-        input:nth-of-type(1):checked~div:nth-of-type(1){display: block;}
-        
-        input:nth-of-type(2){display: none;}
-        input:nth-of-type(2)~div:nth-of-type(2){display: none;}
-        input:nth-of-type(2):checked~div:nth-of-type(2){display: block;}
-
-        section.buttons{overflow: hidden;}
-        section.buttons>label{display: block; float: left; width: 100px; height: 30px; line-height: 30px; text-align: center;
-        box-sizing: border-box; border: 1px solid black; background: black; color: white;}
-        input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1){background: white; color: black;}
-        input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2){background: white; color: black;}
-
-        /* list 설정 */
-        .item{overflow: hidden; padding: 10px; border: 1px solid black; border-top: none;}
-        .thumbnail{float: left;}
-        .description{float: left; margin-left: 10px;}
-        .description>strong{display: block; width: 120px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-
-        /* Footer 설정 */
-        #main_footer{width: 960px; margin: 0 auto; margin-bottom: 10px; box-sizing: border-box; padding: 10px; border: 1px solid black; text-align: center;}
-    </style>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
 </head>
 
 <body>
-    <header id="main_header">
+    <div id="main_header">
         <div id="title">
-            <h1>Rint Developement</h1>
-            <h2>HTML5 + CSS3 Basic</h2>
+            <p id="title1">언제나</p>
+            <p id="title2">영화처럼</p>
         </div>
-        <!-- Global navigation bar -->
-         <nav id="main_gnb">
+        <nav id="main_gnb">
             <ul>
-                <li><a href="#">Web</a></li>
-                <li><a href="#">Mobile</a></li>
-                <li><a href="#">Game</a></li>
-                <li><a href="#">Simulation</a></li>
-                <li><a href="#">Data</a></li>
+                <li><a href="https://section.blog.naver.com/BlogHome.nhn?directoryNo=0&currentPage=1&groupId=0">블로그 홈</a></li>
+                <li><a href="#">이웃 블로그</a></li>
+                <li><a href="#">내 블로그</a></li>
             </ul>
         </nav>
-        <!-- local navigation bar -->
+        <div id="lnb_color"></div>
         <nav id="main_lnb">
             <ul>
-                <li><a href="#">HTML5</a></li>
-                <li><a href="#">CSS3</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="#">jQuery</a></li>
-                <li><a href="#">Node.js</a></li>
+                <li><a href="https://blog.naver.com/lifeisntcool">프롤로그</a></li>
+                <li><a href="https://blog.naver.com/lifeisntcool">블로그</a></li>
+                <li><a href="https://blog.naver.com/lifeisntcool">셀룰로이드 드림</a></li>
+                <li><a href="https://blog.naver.com/lifeisntcool">사진 하나 문장 셋</a></li>
+                <li><a href="https://blog.naver.com/lifeisntcool">Now And Then</a></li>
+                <li><a href="https://blog.naver.com/lifeisntcool">Q and A</a></li>
             </ul>
         </nav>
-    </header>
+        <nav id="sub_lnb">
+            <ul>
+                <li><a href="#">지도</a></li>
+                <li><a href="#">서재</a></li>
+                <li><a href="#">태그</a></li>
+                <li><a href="#">안부</a></li>
+            </ul>
+        </nav>
+
+
+    </div>
 
     <div id="content">
         <section id="main_section">
-            <article class="main_article">
-                <h1>Main Article</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae modi unde nihil assumenda ducimus placeat odit officia laborum aliquam, omnis ea. Iste illum mollitia rerum animi voluptatem dignissimos repellat cum libero, ipsam nam aspernatur repudiandae facere consequatur, optio eaque ullam iure illo, aliquid reprehenderit quam nostrum maiores debitis? Eius, at?</p>
+            <article id="main_article">
+                <a href="">셀룰로이드 드림</a>
+                <p>한나 가게</p>
+                <p>출처 : 영화 평론가 이동진님 블로그</p>
+                <hr>
+                <p id="main_begin">이번주 개봉작을 포함한 <br>최근 극장 상영작들에 대해 <br>한줄평과 별정을 올립니다</p>
+                <p id="blackbird">〈완벽한 가족〉<br>감독 : 로저 미첼 <br> 출연 : 수전 서렌든, 케이트 윈슬렛, 미아 바시코브스카, 샘 닐, 레인 윌슨</p>
+                <img src="Source/blackbird.jpg">
+                <div id="movie_info">
+                    <div id="movie_poster">
+                        <div id="poster_img">
+                            <img src="Source/family.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id="movie_link">
+                        <div id="link_padding">
+                            <a href="">
+                                <b>완벽한 가족</b>
+                                <br>감독 : 로저 미첼 <br> 출연 : 수전 서렌든, 케이트 윈슬렛, 미아 바시코브스카, 샘 닐, 레인 윌슨
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p id="blackbird">〈나이팅게일〉<br>감독 : 제니퍼 켄트 <br> 출연 : 아이슬링 프란시오시, 베이칼리 가남바르, 샘 클라플린</p>
+                <img src="Source/nightingale.jpg">
+                <div id="movie_info">
+                    <div id="movie_poster">
+                        <div id="poster_img">
+                            <img src="Source/nightingale2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id="movie_link">
+                        <div id="link_padding">
+                            <a href="">
+                                <b>나이팅게일</b>
+                                <br>감독 : 제니퍼 켄트 <br> 출연 : 아이슬링 프란시오시, 베이칼리 가남바르, 샘 클라플린
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <p id="review">〈완벽한 가족〉<br>재치를 부리고 굴곡을 넣느라 논쟁적 사안에 대한 제언의 힘이 약화됐다.<br>★★☆</p>
+                <p id="review">〈나이팅게일〉<br>참혹한 제노사이드 역사를 노골적으로 묘사하고 직접적으로 고발한다.<br>★★☆</p>
+                <p id="review">〈운디네〉<br>상실된 사랑과 소실된 역사를 신비로운 물의 감촉으로 고쳐 쓴다.<br>★★★★</p>
+                <p id="review">〈원더 우면 1984〉<br>고개를 끄덕이면서도 언제 훈시가 끝날지 계속 시계를 힐끔거렸던 오래 전 조회시간처럼...<br>★★</p>
+                <p id="review">〈썸머 85〉<br>미스터리를 중심 동력으로 삼을 필요가 없었던 이야기.<br>★★☆</p>
+                <p id="review">〈겨울밤에〉<br>상실의 계절, 겨울의 환(幻).<br>★★★☆</p>
+                <p id="review">〈조제〉<br>위태로운 사랑의 존재론을 산발적인 감정의 풍경화로 대체한 리메이크.<br>★★☆</p>
+                <p id="review">〈잔칫날〉<br>고단한 삶의 극심한 아이러니 속에서도 상투성의 함정에 빠지지 않고 먹먹하게.<br>★★★☆</p>
+                <p id="review">〈럭키 몬스터〉<br>참신한 착상을 밀고 나갈 자신만의 스타일을 갖췄다.<br>★★★☆</p>
+                <p id="review">〈내언니전지현과 나〉<br>한국사회에 대한 알레고리로서나 변화를 일궈낸 우정의 이야기로서 모두 인상적.<br>★★★</p>
+                <p id="review">〈그리고 우린 춤을 추었다〉<br>맨 뒤에 뜨는 제목까지 접하고 나면 자유로운 독무는 결국 뜨거운 2인무.<br>★★★☆</p>
+                <p id="review">〈콜〉<br>그 광기, 그 독기, 그 한기, 그 똘끼의 전종서.<br>★★★☆</p>
+                <p id="review">〈맹크〉<br>영화는 타협의 예술이지만 예술가에겐 물러서지 말아야 할 지점이 있다는 다짐.<br>★★★★</p>
             </article>
-            <article class="main_article">
-                <h1>Main Article</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nostrum deserunt impedit ipsum nulla mollitia voluptatibus odit delectus itaque debitis exercitationem sit fugiat commodi, assumenda vel accusantium sint qui consequatur similique quae voluptates. Doloremque, delectus nihil! Corporis, voluptatem! Iusto modi molestiae inventore. Quae aliquid debitis animi quaerat fugit cum saepe?</p>
-            </article>
-            <article class="main_article">
-                <h1>Main Article</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate inventore accusantium? Reprehenderit, tenetur ex! Laboriosam repellat doloremque animi fuga error eius modi quo, ad et incidunt. Dolore et eaque unde at hic quis est a temporibus non alias nemo, aspernatur incidunt eius, consequuntur ab labore earum sunt ex facilis?</p>
-            </article>
+            
         </section>
         <aside id="main_aside">
-            <input type="radio" name="tab" id="first" checked="checked">
-            <input type="radio" name="tab" id="second">
-            <section class="buttons">
-                <label for="first">First</label>
-                <label for="second">Second</label>
-            </section>
-            <div class="tap_item">
-                <ul>
-                    <li class="item">
-                        <a href="#">
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/45x45">
-                            </div>
-                            <div class="description">
-                                <strong>HTML5 Canvas</strong>
-                                <p>2021-01-08</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/45x45">
-                            </div>
-                            <div class="description">
-                                <strong>HTML5 Audio</strong>
-                                <p>2021-01-08</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/45x45">
-                            </div>
-                            <div class="description">
-                                <strong>HTML5 Video</strong>
-                                <p>2021-01-08</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
-                            <div class="thumbnail">
-                                <img src="http://placehold.it/45x45">
-                            </div>
-                            <div class="description">
-                                <strong>HTML5 Semantic Web</strong>
-                                <p>2021-01-08</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+            <div id="aside_top">
+                <img src="Source/joker_la.jpg" id="profil">
+                <h1>황창식</h1>
+                <p>하루하루는 성실하게, <br>인생전체는 되는대로. <br>('밤은 책이다' 중에서)</p>
             </div>
-            <div class="tap_item">
-                <ul>
-                    <li class="item">
-                        <a href="#">
+
+            <div id="aside_bottom">
+                <h1>보물같은 영화들</h1>
+                <input type="radio" id="first" name="tab" checked>
+                <input type="radio" id="second" name="tab">
+                <section class="buttons">
+                    <label for="first">1</label>
+                    <label for="second">2</label>
+                </section>
+                <div class="tab_item">
+                    <ul>
+                        <li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=120793">
                             <div class="thumbnail">
-                                <img src="http://placehold.it/45x45">
+                                <img src="Source/the_lobster.jpg" alt="">
                             </div>
                             <div class="description">
-                                <strong>CSS3 Transition</strong>
-                                <p>2021-01-08</p>
+                                <p>The Lobster</p>
                             </div>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
+                        </a></li>
+                        <li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=136869">
                             <div class="thumbnail">
-                                <img src="http://placehold.it/45x45">
+                                <img src="Source/arrival.jpg" alt="">
                             </div>
                             <div class="description">
-                                <strong>CSS3 Animation</strong>
-                                <p>2021-01-08</p>
+                                <p>Arrival</p>
                             </div>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
+                        </a></li>
+                        <li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=119632">
                             <div class="thumbnail">
-                                <img src="http://placehold.it/45x45">
+                                <img src="Source/whiplash.jpg" alt="">
                             </div>
                             <div class="description">
-                                <strong>CSS3 Border</strong>
-                                <p>2021-01-08</p>
+                                <p>Whiplash</p>
                             </div>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
+                        </a></li>
+                        <li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=101950">
                             <div class="thumbnail">
-                                <img src="http://placehold.it/45x45">
+                                <img src="Source/her.jpg" alt="">
                             </div>
                             <div class="description">
-                                <strong>CSS3 Box</strong>
-                                <p>2021-01-08</p>
+                                <p>Her</p>
                             </div>
-                        </a>
-                    </li>
-                </ul>
+                        </a></li>
+                        <li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=97612">
+                            <div class="thumbnail">
+                                <img src="Source/hotel.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <p>The Grand Budapast Hotel</p>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="tab_item">
+                    <ul>
+                        <li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=49336">
+                            <div class="thumbnail">
+                                <img src="Source/maze.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <p>El Laberinto del Fauno</p>
+                            </div>
+                        </a></li>
+                        <li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=66751">
+                            <div class="thumbnail">
+                                <img src="Source/old_man.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <p>No Country for Old Man</p>
+                            </div>
+                        </a></li>
+                        <li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=38444">
+                            <div class="thumbnail">
+                                <img src="Source/eternal.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <p>Eternal Sunshine</p>
+                            </div>
+                        </a></li>
+                        <li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=185282">
+                            <div class="thumbnail">
+                                <img src="Source/portrait.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <p>Portrait de la jeune fille en feu</p>
+                            </div>
+                        </a></li>
+                        <li><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=164719">
+                            <div class="thumbnail">
+                                <img src="Source/florida.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <p>The Florida Project</p>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
             </div>
+                
+            
         </aside>
     </div>
-
-    <footer id="main_footer">
-        <h3>HTML5 + CSS3 Basic</h3>
-        <address>Website Layout Basic</address>
-    </footer>
+    <div id="footer">
+        <h1>2021-01-11</h1>
+        <p>실습 자료입니다~ (참고 : 영화평론가 이동진님 블로그)</p>
+    </div>
 </body>
 
 </html>
